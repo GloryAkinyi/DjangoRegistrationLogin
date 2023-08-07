@@ -14,13 +14,10 @@
 <a href="{% url 'register' %}" class="btn btn-warning">Register</a><br><br>
 
 <h1 style="text-align: center">Login Form</h1>
+
 <form method="POST" action="{% url 'home' %}">
     {% csrf_token %}
-    <label for="fname" class="form-label">Firstname</label>
-    <input type="text" id="fname" name="firstname" class="form-control" required="required">
 
-    <label for="lname" class="form-label">Lastname</label>
-    <input type="text" id="fname" name="lastname" class="form-control" required="required">
 
     <label for="uname" class="form-label">Username</label>
     <input type="text" id="uname" name="username" class="form-control" required="required">
